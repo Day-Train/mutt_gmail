@@ -1,0 +1,31 @@
+user: john
+email: john_smith@gmail.com
+real_name: "John Smith"
+
+google_app_pass: password
+
+imap_user: "{{ email }}"
+imap_pass: "{{ google_app_pass }}"
+
+spoolfile: imaps://imap.gmail.com/INBOX
+folder: imaps://imap.gmail.com/
+record: imaps://imap.gmail.com/[Gmail]/Sent Mail
+postponed: imaps://imap.gmail.com/[Gmail]/Drafts
+mbox: imaps://imap.gmail.com/[Gmail]/All Mail
+
+smtp_url: smtp://john_smith@smtp.gmail.com:587/
+smtp_encryption: tls
+smtp_server: smtp.gmail.com
+smtp_server_port: 587
+smtp_pass: "{{ google_app_pass }}"
+
+ssl_force_tls: 'yes'
+
+editor: vi
+edit_headers: 'yes'
+charset: UTF-8
+
+unset_use_domain: unset use_domain
+from: "{{ real_name }} <{{ email }}>"
+use_from: 'yes'
+signoff: true

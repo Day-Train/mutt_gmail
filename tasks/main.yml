@@ -1,0 +1,11 @@
+---
+- name: Install mutt
+  apt: pkg=mutt state=present
+  become: true
+
+- name: Configure .muttrc file
+  template:
+    src: muttconfig.jinja2
+    dest: /home/{{ user }}/.muttrc
+    owner: "{{ user }}"
+    mode: 0600

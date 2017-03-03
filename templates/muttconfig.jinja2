@@ -1,0 +1,25 @@
+# .muttrc
+# ========= IMAP Settings =========
+set imap_user = '{{ imap_user }}'
+set imap_pass = '{{ imap_pass }}'
+
+set spoolfile = {{ spoolfile }}
+set folder = {{ folder }}
+set record = "{{ record }}"
+set postponed = "{{ postponed }}"
+set mbox = "{{ mbox }}"
+
+# ========= SMTP Settings =========
+set smtp_url = "{{ smtp_url }}"
+set smtp_pass = {{ smtp_pass }}
+set ssl_force_tls = {{ ssl_force_tls}}
+
+# ===== Composition Settings ======
+set editor = {{ editor }}
+set edit_headers = {{ edit_headers }}
+set charset = {{ charset }}
+{{ unset_use_domain }}
+set realname = "{{ real_name }}"
+set from = "{{ from }}"
+set use_from = {{ use_from }}
+
