@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Alex Day
+  description: Mutt installation and configuration with Gmail
+  license: BSD
+  min_ansible_version: 2.0
+
+  - name: Ubuntu
+    versions:
+     - xenial  
+  galaxy_tags:
+  - gmail
+  - mutt
+  - email
+
+dependencies: []
