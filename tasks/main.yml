@@ -6,6 +6,6 @@
 - name: Configure .muttrc file
   template:
     src: muttconfig.jinja2
-    dest: /home/{{ user }}/.muttrc
-    owner: "{{ user }}"
+    dest: /home/{{ mg_user }}/.muttrc
+    owner: "{{ mg_user }}"
     mode: 0600

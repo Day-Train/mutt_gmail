@@ -18,7 +18,7 @@ mg_ssl_force_tls: 'yes'
 mg_editor: editor
 mg_edit_headers: 'yes'
 mg_charset: UTF-8
-mg_unset_user_domain: unset use_domain
+mg_unset_use_domain: unset use_domain
 mg_from: "{{ mg_name }} <{{ mg_email }}>"
 mg_use_from: 'yes'
 mg_signoff: true
