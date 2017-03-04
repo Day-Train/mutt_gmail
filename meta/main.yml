@@ -6,7 +6,10 @@ galaxy_info:
   platforms:
   - name: Ubuntu
     versions:
-     - xenial  
+     - xenial
+  - name: FreeBSD
+    versions:
+     - 11.0 
   galaxy_tags:
   - gmail
   - mutt
