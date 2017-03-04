@@ -1,6 +1,12 @@
 ---
 - name: Install mutt
-  apt: pkg=mutt state=present
+  apt: name=mutt state=present
+  when: ansible_os_family == "Debian"
+  become: true
+
+- name: Install mutt
+  pkgng: name=mutt state=present
+  when: ansible_os_family == "FreeBSD"
   become: true
 
 - name: Configure .muttrc file
