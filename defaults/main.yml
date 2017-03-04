@@ -1,0 +1,24 @@
+mg_user: john
+mg_email: john_smith@gmail.com
+mg_name: "John Smith"
+mg_google_app_pass: password
+mg_imap_user: "{{ mg_email }}"
+mg_imap_pass: "{{ mg_google_app_pass }}"
+mg_spoolfile: imaps://imap.gmail.com/INBOX
+mg_folder: imaps://imap.gmail.com/
+mg_record: imaps://imap.gmail.com/[Gmail]/Sent Mail
+mg_postponed: imaps://imap.gmail.com/[Gmail]/Drafts
+mg_mbox: imaps://imap.gmail.com/[Gmail]/All Mail
+mg_smtp_url: smtp://john_smith@smtp.gmail.com:587/
+mg_smtp_encryption: tls
+mg_smtp_server: smtp.gmail.com
+mg_smtp_server_port: 587
+mg_smtp_pass: "{{ mg_google_app_pass }}"
+mg_ssl_force_tls: 'yes'
+mg_editor: editor
+mg_edit_headers: 'yes'
+mg_charset: UTF-8
+mg_unset_user_domain: unset use_domain
+mg_from: "{{ mg_name }} <{{ mg_email }}>"
+mg_use_from: 'yes'
+mg_signoff: true

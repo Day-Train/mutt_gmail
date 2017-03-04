@@ -1,25 +1,25 @@
 # .muttrc
 # ========= IMAP Settings =========
-set imap_user = '{{ imap_user }}'
-set imap_pass = '{{ imap_pass }}'
+set imap_user = '{{ mg_imap_user }}'
+set imap_pass = '{{ mg_imap_pass }}'
 
-set spoolfile = {{ spoolfile }}
-set folder = {{ folder }}
-set record = "{{ record }}"
-set postponed = "{{ postponed }}"
-set mbox = "{{ mbox }}"
+set spoolfile = {{ mg_spoolfile }}
+set folder = {{ mg_folder }}
+set record = "{{ mg_record }}"
+set postponed = "{{ mg_postponed }}"
+set mbox = "{{ mg_mbox }}"
 
 # ========= SMTP Settings =========
-set smtp_url = "{{ smtp_url }}"
-set smtp_pass = {{ smtp_pass }}
-set ssl_force_tls = {{ ssl_force_tls}}
+set smtp_url = "{{ mg_smtp_url }}"
+set smtp_pass = {{ mg_smtp_pass }}
+set ssl_force_tls = {{ mg_ssl_force_tls}}
 
 # ===== Composition Settings ======
-set editor = {{ editor }}
-set edit_headers = {{ edit_headers }}
-set charset = {{ charset }}
-{{ unset_use_domain }}
-set realname = "{{ real_name }}"
-set from = "{{ from }}"
-set use_from = {{ use_from }}
+set editor = {{ mg_editor }}
+set edit_headers = {{ mg_edit_headers }}
+set charset = {{ mg_charset }}
+{{ mg_unset_use_domain }}
+set realname = "{{ mg_name }}"
+set from = "{{ mg_from }}"
+set use_from = {{ mg_use_from }}
 
